@@ -4,173 +4,182 @@
     <meta name="viewport" content="width=device-width">
     <title>l4n1skyy/Projects</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @font-face { font-family: Cozette; src: url('./assets/CozetteVector.ttf'); } 
+    </style>
   </head>
 
-<body class=" flex flex-col">
-    <div class="bg-gradient-to-tr from-slate-950 to-slate-900 fixed left-0 top-0 w-screen h-screen -z-10"></div>
+<body class="bg-gradient-to-r from-slate-950 to-slate-900 flex flex-col" style="font-family: 'Cozette';">
+    <div class="fixed left-0 top-0 w-screen h-screen -z-10"></div>
     
     <div class="flex flex-col md:flex-row h-max">
         <div class="self-start md:sticky top-0 h-auto w-full flex flex-col px-20 pt-20">
             <div class="mx-auto my-auto space-y-6">
-                <p class="text-purple-400 font-bold text-5xl">My Projects</p>
-                <p class="text-fuchsia-300 font-semibold text-xl">My current, past and future projects</p>
+                <p class="text-purple-400 font-bold text-7xl">My Projects</p>
+                <p class="text-purple-400 font-semibold text-3xl">My current, past and future projects</p>
                 <div class="justify-center flex flex-wrap">
-                    <!-- <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-yellow-400/10 m-1 inline-block text-yellow-300">label-yellow</span> -->
-                    <!-- <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-teal-400/10 m-1 inline-block text-teal-300">label-blue</span> -->
-                    <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-teal-400/10 m-1 inline-block text-yellow-300">Game Dev</span>
-                    <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-teal-400/10 m-1 inline-block text-yellow-300">Data Science</span>
-                    <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-teal-400/10 m-1 inline-block text-yellow-300">Cybersecurity</span>
-                    <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-teal-400/10 m-1 inline-block text-yellow-300">Computer Science</span>
-                    <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-teal-400/10 m-1 inline-block text-yellow-300">Programming</span>
-                    <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-teal-400/10 m-1 inline-block text-teal-300">C</span>
-                    <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-teal-400/10 m-1 inline-block text-teal-300">Python</span>
-                    <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-teal-400/10 m-1 inline-block text-teal-300">HTML</span>
-                    <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-teal-400/10 m-1 inline-block text-teal-300">CSS</span>
-                    <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-teal-400/10 m-1 inline-block text-teal-300">PHP</span>
-                    <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-teal-400/10 m-1 inline-block text-teal-300">JavaScript</span>
-                    <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-teal-400/10 m-1 inline-block text-teal-300">Shell</span>
+                    <!-- <span class="whitespace-nowrap rounded-full px-3 py-1  font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">label-yellow</span> -->
+                    <!-- <span class="whitespace-nowrap rounded-full px-3 py-1  font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">label-blue</span> -->
+                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Game Dev</span>
+                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Data Science</span>
+                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Cybersecurity</span>
+                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Computer Science</span>
+                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Programming</span>
+                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">C</span>
+                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">Python</span>
+                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">HTML</span>
+                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">CSS</span>
+                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">PHP</span>
+                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">JavaScript</span>
+                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">Shell</span>
+
+                    <!-- <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-emerald-400/10 text-emerald-300 h-fit">Active</span> -->
+                    <!-- <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-purple-400/10 text-purple-300 h-fit">Completed</span> -->
+                    <!-- <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-cyan-400/10 text-cyan-300 h-fit">Planned</span> -->
+                    <!-- <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-red-400/10 text-red-300 h-fit">Archived</span> -->
+                    <!-- <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-yellow-400/10 text-yellow-300 h-fit">Completed</span> -->
                 </div>
             </div>
         </div>
 
     <div class="w-full pt-32 flex flex-col">
-        <p class="text-4xl text-white font-light ml-20">Projects:</p>
+        <p class="text-5xl text-white font-light ml-20">Projects:</p>
     <div class="w-fit flex flex-col mx-auto">
 
     <div class="mx-20 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
         <div class="flex justify-between">
-            <p class="text-2xl font-light text-white">OverTheWire: Bandit</p>
-            <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-emerald-400/10 text-emerald-300 h-fit">Active</span>
+            <p class="text-3xl font-light text-white">OverTheWire: Bandit</p>
+            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-emerald-400/10 text-emerald-300 h-fit">Active</span>
         </div>
         <p class="text-gray-400">
             − 
-            <a class="text-pink-300" href="https://overthewire.org/wargames/bandit/" target="_blank">
+            <a class="text-xl text-pink-300" href="https://overthewire.org/wargames/bandit/" target="_blank">
                 overthewire.org/wargames/bandit/
             </a>
         </p>
-        <p class="text-gray-400 whitespace-pre-wrap">The war games offered by OverTheWire help you to learn and practice security concepts in the form of fun-filled games. The bandit wargame is for beginners at Linux/UNIX environment and are facing problems while learning the real-time use of Linux commands. It goes over simple Linux commands and ramps up into more advanced techniques as the game gets into higher levels.</p>
+        <p class="text-xl text-gray-400 whitespace-pre-wrap">The war games offered by OverTheWire help you to learn and practice security concepts in the form of fun-filled games. The bandit wargame is for beginners at Linux/UNIX environment and are facing problems while learning the real-time use of Linux commands. It goes over simple Linux commands and ramps up into more advanced techniques as the game gets into higher levels.</p>
         <div class="justify-start">
-            <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-yellow-400/10 m-1 inline-block text-yellow-300">Cybersecurity</span>
-            <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-teal-400/10 m-1 inline-block text-teal-300">Shell</span>
+            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Cybersecurity</span>
+            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">Shell</span>
         </div>
     </div>
 
     <div class="mx-20 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
         <div class="flex justify-between">
-            <p class="text-2xl font-light text-white">Google Data Analytics Professional Certificate</p>
-            <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-emerald-400/10 text-emerald-300 h-fit">Active</span>
+            <p class="text-3xl font-light text-white">Google Data Analytics Professional Certificate</p>
+            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-emerald-400/10 text-emerald-300 h-fit">Active</span>
         </div>
         <p class="text-gray-400">
             − 
-            <a class="text-pink-300" href="https://www.coursera.org/professional-certificates/google-data-analytics" target="_blank">
+            <a class="text-xl text-pink-300" href="https://www.coursera.org/professional-certificates/google-data-analytics" target="_blank">
                 coursera.org/professional-certificates/google-data-analytics
             </a>
         </p>
-        <p class="text-gray-400 whitespace-pre-wrap">I was interested to know more about the field of data science so I enrolled in this course, and I was sponsored by Girls In Tech: KL, thanks GIT!</p>
+        <p class="text-xl text-gray-400 whitespace-pre-wrap">I was interested to know more about the field of data science so I enrolled in this course, and I was sponsored by Girls In Tech: KL, thanks GIT!</p>
         <div class="justify-start">
-            <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-yellow-400/10 m-1 inline-block text-yellow-300">Data Science</span>
+            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">Data Science</span>
         </div>
     </div>
 
     <div class="mx-20 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
         <div class="flex justify-between">
-            <p class="text-2xl font-light text-white">polybar-ping</p>
-            <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-purple-400/10 text-purple-300 h-fit">Completed</span>
+            <p class="text-3xl font-light text-white">polybar-ping</p>
+            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-purple-400/10 text-purple-300 h-fit">Completed</span>
         </div>
         <p class="text-gray-400">
             − 
-            <a class="text-pink-300" href="https://github.com/l4n1skyy/polybar-ping" target="_blank">
+            <a class="text-xl text-pink-300" href="https://github.com/l4n1skyy/polybar-ping" target="_blank">
                 github.com/l4n1skyy/polybar-ping
             </a>
         </p>
-        <p class="text-gray-400 whitespace-pre-wrap">shows ping in polybar.. why? idk I'm used to seeing ping in games as a indicator of good/bad internet soo yea, prefer this to polybar's default KB</p>
+        <p class="text-xl text-gray-400 whitespace-pre-wrap">shows ping in polybar.. why? idk I'm used to seeing ping in games as a indicator of good/bad internet soo yea, prefer this to polybar's default KB</p>
         <div class="justify-start">
-            <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-yellow-400/10 m-1 inline-block text-yellow-300">Programming</span>
-            <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-teal-400/10 m-1 inline-block text-teal-300">Shell</span>
+            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Programming</span>
+            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">Shell</span>
         </div>
     </div>
 
     <div class="mx-20 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
         <div class="flex justify-between">
-            <p class="text-2xl font-light text-white">Clinder</p>
-            <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-purple-400/10 text-purple-300 h-fit">Completed</span>
+            <p class="text-3xl font-light text-white">Clinder</p>
+            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-purple-400/10 text-purple-300 h-fit">Completed</span>
         </div>
         <p class="text-gray-400">
             − 
-            <a class="text-pink-300" href="https://github.com/l4n1skyy/clinder" target="_blank">
+            <a class="text-xl text-pink-300" href="https://github.com/l4n1skyy/clinder" target="_blank">
                 github.com/l4n1skyy/clinder
             </a>
         </p>
-        <p class="text-gray-400 whitespace-pre-wrap">command line interface for google calendar</p>
+        <p class="text-xl text-gray-400 whitespace-pre-wrap">command line interface for google calendar</p>
         <div class="justify-start">
-            <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-yellow-400/10 m-1 inline-block text-yellow-300">Programming</span>
-            <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-teal-400/10 m-1 inline-block text-teal-300">Python</span>
+            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Programming</span>
+            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">Python</span>
         </div>
     </div>
 
     <div class="mx-20 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
         <div class="flex justify-between">
-            <p class="text-2xl font-light text-white">Quantum Entanglement</p>
-            <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-purple-400/10 text-purple-300 h-fit">Completed</span>
+            <p class="text-3xl font-light text-white">Quantum Entanglement</p>
+            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-purple-400/10 text-purple-300 h-fit">Completed</span>
         </div>
         <p class="text-gray-400">
             − 
-            <a class="text-pink-300" href="https://github.com/mit-mit-randomprojectlab/team_myctl_pyweek33" target="_blank">
+            <a class="text-xl text-pink-300" href="https://github.com/mit-mit-randomprojectlab/team_myctl_pyweek33" target="_blank">
                 github.com/mit-mit-randomprojectlab/team_myctl_pyweek33
             </a>
         </p>
-        <p class="text-gray-400 whitespace-pre-wrap">A PyWeek 33 (March 2022) Entry by Team MYCTL for theme "My Evil Twin"</p>
+        <p class="text-xl text-gray-400 whitespace-pre-wrap">A PyWeek 33 (March 2022) Entry by Team MYCTL for theme "My Evil Twin"</p>
         <div class="justify-start">
-            <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-yellow-400/10 m-1 inline-block text-yellow-300">Game Dev</span>
-            <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-teal-400/10 m-1 inline-block text-teal-300">Python</span>
+            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Game Dev</span>
+            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">Python</span>
         </div>
     </div>
 
     <div class="mx-20 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
         <div class="flex justify-between">
-            <p class="text-2xl font-light text-white">Sistem Pengurusan Pertandingan Catur (SPPC)</p>
-            <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-purple-400/10 text-purple-300 h-fit">Completed</span>
+            <p class="text-3xl font-light text-white">Sistem Pengurusan Pertandingan Catur (SPPC)</p>
+            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-purple-400/10 text-purple-300 h-fit">Completed</span>
         </div>
         <p class="text-gray-400">
             − 
-            <a class="text-pink-300" href="https://github.com/l4n1skyy/SPPC" target="_blank">
+            <a class="text-xl text-pink-300" href="https://github.com/l4n1skyy/SPPC" target="_blank">
                 github.com/l4n1skyy/SPPC
             </a>
         </p>
-        <p class="text-gray-400 whitespace-pre-wrap">SPPC is a program to manage chess competitions (round robin). The system language is Malay.</p>
+        <p class="text-xl text-gray-400 whitespace-pre-wrap">SPPC is a program to manage chess competitions (round robin). The system language is Malay.</p>
         <div class="justify-start">
-            <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-yellow-400/10 m-1 inline-block text-yellow-300">Programming</span>
-            <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-teal-400/10 m-1 inline-block text-teal-300">Python</span>
+            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Programming</span>
+            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">Python</span>
         </div>
     </div>
 
     <div class="mx-20 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
         <div class="flex justify-between">
-            <p class="text-2xl font-light text-white">CS50x</p>
-            <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-purple-400/10 text-purple-300 h-fit">Completed</span>
+            <p class="text-3xl font-light text-white">CS50x</p>
+            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-purple-400/10 text-purple-300 h-fit">Completed</span>
         </div>
         <p class="text-gray-400">
             − 
-            <a class="text-pink-300" href="https://cs50.harvard.edu/x/2021/" target="_blank">
+            <a class="text-xl text-pink-300" href="https://cs50.harvard.edu/x/2021/" target="_blank">
                 cs50x 2021
             </a>
         </p>
         <p class="text-gray-400">
             − 
-            <a class="text-pink-300" href="https://cs50.harvard.edu/certificates/6a1a1785-770e-4212-8921-2e67f8f3c44d" target="_blank">
+            <a class="text-xl text-pink-300" href="https://cs50.harvard.edu/certificates/6a1a1785-770e-4212-8921-2e67f8f3c44d" target="_blank">
                 cert
             </a>
         </p>
-        <p class="text-gray-400 whitespace-pre-wrap">This course teaches students how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web programming. Languages include C, Python, and SQL plus HTML, CSS, and JavaScript.</p>
+        <p class="text-xl text-gray-400 whitespace-pre-wrap">This course teaches students how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, software engineering, and web programming. Languages include C, Python, and SQL plus HTML, CSS, and JavaScript.</p>
         <div class="justify-start">
-            <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-yellow-400/10 m-1 inline-block text-yellow-300">Computer Science</span>
-            <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-yellow-400/10 m-1 inline-block text-yellow-300">Programming</span>
-            <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-teal-400/10 m-1 inline-block text-teal-300">C</span>
-            <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-teal-400/10 m-1 inline-block text-teal-300">Python</span>
-            <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-teal-400/10 m-1 inline-block text-teal-300">SQL</span>
-            <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-teal-400/10 m-1 inline-block text-teal-300">HTML</span>
-            <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-teal-400/10 m-1 inline-block text-teal-300">CSS</span>
-            <span class="whitespace-nowrap rounded-full px-3 py-1 text-xs font-semibold bg-teal-400/10 m-1 inline-block text-teal-300">JavaScript</span>
+            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Computer Science</span>
+            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Programming</span>
+            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">C</span>
+            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">Python</span>
+            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">SQL</span>
+            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">HTML</span>
+            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">CSS</span>
+            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">JavaScript</span>
         </div>
     </div>
 
