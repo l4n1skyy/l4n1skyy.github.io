@@ -25,18 +25,18 @@
                     <!-- Computer Science -->
                     <button onclick="filter('cs50x')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Computer Science</button>
                     <!-- Software Engineering -->
-                    <button onclick="filter('cs50x', 'polybar-ping', 'clinder', 'sppc')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Software Engineering</button>
+                    <button onclick="filter('cs50x','polybar-ping','clinder','sppc','personal-website')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Software Engineering</button>
 
                     <!-- C -->
                     <button onclick="filter('cs50x')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">C</button>
                     <!-- Python -->
                     <button onclick="filter('cs50x','quantum-entanglement','clinder')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">Python</button>
                     <!-- HTML -->
-                    <button onclick="filter('cs50x','sppc')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">HTML</button>
+                    <button onclick="filter('cs50x','sppc','personal-website')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">HTML</button>
                     <!-- CSS -->
-                    <button onclick="filter('cs50x','sppc')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">CSS</button>
-                    <!-- Javascript -->
-                    <button onclick="filter()" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">JavaScript</button>
+                    <button onclick="filter('cs50x','sppc','personal-website')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">CSS</button>
+                    <!-- JavaScript -->
+                    <button onclick="filter('personal-website')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">JavaScript</button>
                     <!-- PHP -->
                     <button onclick="filter('sppc')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">PHP</button>
                     <!-- SQL -->
@@ -45,7 +45,7 @@
                     <button onclick="filter('polybar-ping')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">Shell</button>
 
                     <!-- Active -->
-                    <button onclick="filter()" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-emerald-400/10 text-emerald-300 m-1 h-fit">Active</span>
+                    <button onclick="filter('personal-website')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-emerald-400/10 text-emerald-300 m-1 h-fit">Active</span>
                     <!-- Completed -->
                     <button onclick="filter('polybar-ping', 'clinder', 'quantum-entanglement', 'sppc', 'cs50x')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-purple-400/10 text-purple-300 m-1 h-fit">Completed</span>
                     <!-- Planned -->
@@ -216,6 +216,33 @@
             <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">C</span>
             <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">Python</span>
             <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">SQL</span>
+            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">HTML</span>
+            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">CSS</span>
+        </div>
+    </div>
+
+    <!-- Personal Website -->
+    <div id="personal-website" class="project mx-20 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
+        <div class="flex justify-between">
+            <div>
+                <p class="text-3xl font-light text-white">Personal Website</p>
+                <p class="text-gray-400">
+                    − 
+                    <a class="text-xl text-pink-300" href="https://l4n1skyy.github.io" target="_blank">
+                        https://l4n1skyy.github.io
+                    </a>
+                </p>
+            </div>
+            <div class="flex flex-col">
+                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-emerald-400/10 text-emerald-300 h-fit">Active</span>
+                <span class="whitespace-nowrap rounded-full px-5 py-1 font-semibold text-gray-500 h-fit">2021</span>    
+            </div>
+        </div>
+
+        <p class="text-xl text-gray-400 whitespace-pre-wrap">I was interested to know more about the field of data analytics, so I enrolled in this course with Girls in Tech KL (GIT).</p>
+        <div class="justify-start">
+            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Software Engineering</span>
+            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">JavaScript</span>
             <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">HTML</span>
             <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">CSS</span>
         </div>
