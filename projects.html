@@ -16,35 +16,54 @@
                 <p class="text-purple-400 font-bold text-7xl"><a class="text-lime-200" href="./index.html">< </a>My Projects</p>
                 <p class="text-purple-400 font-semibold text-3xl ml-6">My current, past and future projects</p>
                 <div class="justify-center flex flex-wrap">
-                    <!-- <span class="whitespace-nowrap rounded-full px-3 py-1  font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">label-yellow</span> -->
-                    <!-- <span class="whitespace-nowrap rounded-full px-3 py-1  font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">label-blue</span> -->
-                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Game Dev</span>
-                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Data Science</span>
-                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Computer Science</span>
-                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Programming</span>
-                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">C</span>
-                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">Python</span>
-                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">HTML</span>
-                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">CSS</span>
-                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">PHP</span>
-                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">JavaScript</span>
-                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">Shell</span>
+                    <button onclick="location.reload()" class="whitespace-nowrap rounded-full border-dashed border-2 border-gray-500 px-3 py-1 font-semibold bg-gray-500/10 m-1 inline-block text-gray-500">Reset</button>
 
-                    <!-- <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-emerald-400/10 text-emerald-300 h-fit">Active</span> -->
-                    <!-- <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-purple-400/10 text-purple-300 h-fit">Completed</span> -->
-                    <!-- <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-cyan-400/10 text-cyan-300 h-fit">Planned</span> -->
-                    <!-- <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-red-400/10 text-red-300 h-fit">Archived</span> -->
-                    <!-- <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-yellow-400/10 text-yellow-300 h-fit">Completed</span> -->
+                    <!-- Game Dev -->
+                    <button onclick="filter('quantum-entanglement')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Game Dev</button>
+                    <!-- Data Analytics -->
+                    <button onclick="filter('gdsc')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Data Analytics</button>
+                    <!-- Computer Science -->
+                    <button onclick="filter('cs50x')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Computer Science</button>
+                    <!-- Software Engineering -->
+                    <button onclick="filter('cs50x', 'polybar-ping', 'clinder', 'sppc')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Software Engineering</button>
+
+                    <!-- C -->
+                    <button onclick="filter('cs50x')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">C</button>
+                    <!-- Python -->
+                    <button onclick="filter('cs50x','quantum-entanglement','clinder')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">Python</button>
+                    <!-- HTML -->
+                    <button onclick="filter('cs50x','sppc')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">HTML</button>
+                    <!-- CSS -->
+                    <button onclick="filter('cs50x','sppc')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">CSS</button>
+                    <!-- Javascript -->
+                    <button onclick="filter()" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">JavaScript</button>
+                    <!-- PHP -->
+                    <button onclick="filter('sppc')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">PHP</button>
+                    <!-- SQL -->
+                    <button onclick="filter('cs50x')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">SQL</button>
+                    <!-- shell -->
+                    <button onclick="filter('polybar-ping')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">Shell</button>
+
+                    <!-- Active -->
+                    <button onclick="filter()" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-emerald-400/10 text-emerald-300 m-1 h-fit">Active</span>
+                    <!-- Completed -->
+                    <button onclick="filter('polybar-ping', 'clinder', 'quantum-entanglement', 'sppc', 'cs50x')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-purple-400/10 text-purple-300 m-1 h-fit">Completed</span>
+                    <!-- Planned -->
+                    <button onclick="filter()" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-cyan-400/10 text-cyan-300 m-1 h-fit">Planned</span>
+                    <!-- Archived -->
+                    <button onclick="filter('gdsc')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-red-400/10 text-orange-300 m-1 h-fit">Archived</span>
+                    <!-- Paused -->
+                    <button onclick="filter()" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-yellow-400/10 text-yellow-300 m-1 h-fit">Paused</span>
                 </div>
             </div>
         </div>
 
     <div class="w-full pt-32 flex flex-col">
-        <p class="text-5xl text-white font-light ml-20">Projects:</p>
+    <p class="text-5xl text-white font-light ml-20">Projects:</p>
     <div class="w-fit flex flex-col mx-auto">
 
     <!-- GDSC -->
-    <div class="mx-20 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
+    <div id="gdsc" class="project mx-20 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
         <div class="flex justify-between">
             <p class="text-3xl font-light text-white">Google Data Analytics Professional Certificate</p>
             <div class="flex flex-col">
@@ -60,12 +79,12 @@
         </p>
         <p class="text-xl text-gray-400 whitespace-pre-wrap">I was interested to know more about the field of data analytics, so I enrolled in this course with Girls in Tech KL (GIT).</p>
         <div class="justify-start">
-            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">Data Science</span>
+            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Data Analytics</span>
         </div>
     </div>
 
     <!-- Polybar Ping -->
-    <div class="mx-20 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
+    <div id="polybar-ping" class="project mx-20 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
         <div class="flex justify-between">
             <div>
                 <p class="text-3xl font-light text-white">polybar-ping</p>
@@ -84,13 +103,13 @@
 
         <p class="text-xl text-gray-400 whitespace-pre-wrap">shows ping in polybar.. why? idk I'm used to seeing ping in games as a indicator of good/bad internet soo yea, prefer this to polybar's default KB</p>
         <div class="justify-start">
-            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Programming</span>
+            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Software Engineering</span>
             <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">Shell</span>
         </div>
     </div>
 
     <!-- Clinder -->
-    <div class="mx-20 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
+    <div id="clinder" class="project mx-20 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
         <div class="flex justify-between">
             <div>
                 <p class="text-3xl font-light text-white">Clinder</p>
@@ -109,13 +128,13 @@
 
         <p class="text-xl text-gray-400 whitespace-pre-wrap">Command line interface for google calendar I made as CS50x final project.</p>
         <div class="justify-start">
-            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Programming</span>
+            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Software Engineering</span>
             <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">Python</span>
         </div>
     </div>
 
     <!-- Quantum Entanglement -->
-    <div class="mx-20 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
+    <div id="quantum-entanglement" class="project mx-20 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
         <div class="flex justify-between">
             <div>
                 <p class="text-3xl font-light text-white">Quantum Entanglement</p>
@@ -139,7 +158,7 @@
     </div>
 
     <!-- SPPC -->
-    <div class="mx-20 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
+    <div id="sppc" class="project mx-20 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
         <div class="flex justify-between">
             <div>
                 <p class="text-3xl font-light text-white">Sistem Pengurusan Pertandingan Catur (SPPC)</p>
@@ -158,7 +177,7 @@
 
         <p class="text-xl text-gray-400 whitespace-pre-wrap">SPPC is a program to manage chess competitions (round robin). I made this program for a school project, the system language is Malay.</p>
         <div class="justify-start">
-            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Programming</span>
+            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Software Engineering</span>
             <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">PHP</span>
             <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">CSS</span>
             <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">HTML</span>
@@ -166,7 +185,7 @@
     </div>
 
     <!-- CS50x -->
-    <div class="mx-20 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
+    <div id="cs50x" class="project mx-20 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
         <div class="flex justify-between">
             <div>
                 <p class="text-3xl font-light text-white">CS50x</p>
@@ -193,7 +212,7 @@
         <p class="text-xl text-gray-400 whitespace-pre-wrap">The best course I've ever taken- It teaches all the basics of programming and computer science, and provides some really tough programming challenges which make you enjoy programming.</p>
         <div class="justify-start">
             <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Computer Science</span>
-            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Programming</span>
+            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Software Engineering</span>
             <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">C</span>
             <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">Python</span>
             <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">SQL</span>
@@ -207,5 +226,18 @@
     </div>
 </div>
 
+<script>
+    function filter(...args) {
+
+        var elements = document.getElementsByClassName("project");
+        for(var i = 0; i < elements.length; i++){
+            elements[i].style.display = "none";
+        }
+        
+        for (let arg of args) {
+            document.getElementById(arg).style.display = "block";
+        }
+    }
+</script>
 </body>
 </html>
