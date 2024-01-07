@@ -20,21 +20,31 @@
                 <p class="text-purple-400 font-bold text-7xl"><a class="text-lime-200" href="./index.html">< </a>My Projects</p>
                 
                 <!-- Description -->
-                <p class="text-pink-300 font-semibold text-3xl ml-6">My current, past and future projects</p>
+                <p class="text-gray-600 font-semibold text-2xl ml-4">My current, past and future projects</p>
                 
                 <!-- Tags -->
-                <div class="justify-center flex flex-wrap">
-                    <button onclick="location.reload()" class="whitespace-nowrap rounded-full border-dashed border-2 border-gray-500 px-3 py-1 font-semibold bg-gray-500/10 m-1 inline-block text-gray-500">Reset</button>
 
-                    <!-- Game Dev -->
-                    <button onclick="filter('quantum-entanglement')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Game Dev</button>
-                    <!-- Data Analytics -->
-                    <button onclick="filter('gdsc')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Data Analytics</button>
+                <!-- Reset Tag -->
+                <div class="flex flex-wrap">
+                    <button onclick="location.reload()" class="whitespace-nowrap rounded-full border-dashed border-2 border-gray-500 px-3 py-1 font-semibold bg-gray-500/10 m-1 inline-block text-gray-500">Reset</button>
+                </div>
+
+                <!-- Type Tags -->
+                <div class="flex flex-wrap">
                     <!-- Computer Science -->
                     <button onclick="filter('cs50x')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Computer Science</button>
+                    <!-- Data Analytics -->
+                    <button onclick="filter('gdsc')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Data Analytics</button>
                     <!-- Software Engineering -->
-                    <button onclick="filter('cs50x','polybar-ping','clinder','sppc','personal-website')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Software Engineering</button>
+                    <button onclick="filter('polybar-ping','clinder','cs50x')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Software Engineering</button>
+                    <!-- Web Devlopment -->
+                    <button onclick="filter('sppc','personal-website','cs50x')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Web Development</button>
+                    <!-- Game Development -->
+                    <button onclick="filter('quantum-entanglement')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Game Development</button>
+                </div>
 
+                <!-- Language Tags -->
+                <div class="flex flex-wrap">
                     <!-- C -->
                     <button onclick="filter('cs50x')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">C</button>
                     <!-- Python -->
@@ -51,18 +61,22 @@
                     <button onclick="filter('cs50x')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">SQL</button>
                     <!-- shell -->
                     <button onclick="filter('polybar-ping')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">Shell</button>
+                </div>
 
-                    <!-- Active -->
-                    <button onclick="filter('personal-website')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-emerald-400/10 text-emerald-300 m-1 h-fit">Active</span>
-                    <!-- Completed -->
-                    <button onclick="filter('polybar-ping', 'clinder', 'quantum-entanglement', 'sppc', 'cs50x')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-purple-400/10 text-purple-300 m-1 h-fit">Completed</span>
-                    <!-- Planned -->
-                    <button onclick="filter()" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-cyan-400/10 text-cyan-300 m-1 h-fit">Planned</span>
+                <!-- Status Tags -->
+                <div class="flex flex-wrap">
                     <!-- Archived -->
                     <button onclick="filter('gdsc')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-red-400/10 text-orange-300 m-1 h-fit">Archived</span>
                     <!-- Paused -->
                     <button onclick="filter()" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-yellow-400/10 text-yellow-300 m-1 h-fit">Paused</span>
+                    <!-- Completed -->
+                    <button onclick="filter('polybar-ping', 'clinder', 'quantum-entanglement', 'sppc', 'cs50x')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-pink-400/10 text-pink-300 m-1 h-fit">Completed</span>
+                    <!-- Planned -->
+                    <button onclick="filter()" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-cyan-400/10 text-cyan-300 m-1 h-fit">Planned</span>
+                    <!-- Active -->
+                    <button onclick="filter('personal-website')" class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-emerald-400/10 text-emerald-300 m-1 h-fit">Active</span>
                 </div>
+
                 <!-- Tags End -->
 
             </div>
@@ -70,7 +84,7 @@
         <!-- Left End -->
 
         <!-- Right -->
-        <div class="w-full pt-32 flex flex-col">
+        <div class="w-full pt-32 pb-20 flex flex-col">
             <p class="text-5xl text-white font-light ml-5">Projects:</p>
             <div class="w-fit flex flex-col mx-auto">
 
@@ -83,7 +97,7 @@
                                 <p class="text-3xl font-light text-white">Google Data Analytics Professional Certificate</p>
                                 <!-- Link -->
                                 <p class="text-gray-400">
-                                    − <a class="text-xl text-purple-600" href="https://www.coursera.org/professional-certificates/google-data-analytics" target="_blank">coursera.org/professional-certificates/google-data-analytics</a>
+                                    − <a class="text-xl text-purple-300/70" href="https://www.coursera.org/professional-certificates/google-data-analytics" target="_blank">coursera.org/professional-certificates/google-data-analytics</a>
                                 </p>
                             </div>
                             <div class="flex flex-col">
@@ -112,12 +126,12 @@
                                 <p class="text-3xl font-light text-white">polybar-ping</p>
                                 <!-- Link -->
                                 <p class="text-gray-400">
-                                    − <a class="text-xl text-purple-600" href="https://github.com/l4n1skyy/polybar-ping" target="_blank">github.com/l4n1skyy/polybar-ping</a>
+                                    − <a class="text-xl text-purple-300/70" href="https://github.com/l4n1skyy/polybar-ping" target="_blank">github.com/l4n1skyy/polybar-ping</a>
                                 </p>
                             </div>
                             <div class="flex flex-col">
                                 <!-- Status -->
-                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-purple-400/10 text-purple-300 h-fit">Completed</span>
+                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-pink-300/10 text-pink-300 h-fit">Completed</span>
                                 <!-- Date -->
                                 <span class="whitespace-nowrap rounded-full px-4 py-1 font-semibold text-gray-500 h-fit">Aug 2023</span>    
                             </div>
@@ -142,12 +156,12 @@
                                 <p class="text-3xl font-light text-white">Clinder</p>
                                 <!-- Link -->
                                 <p class="text-gray-400">
-                                    − <a class="text-xl text-purple-600" href="https://github.com/l4n1skyy/clinder" target="_blank">github.com/l4n1skyy/clinder</a>
+                                    − <a class="text-xl text-purple-300/70" href="https://github.com/l4n1skyy/clinder" target="_blank">github.com/l4n1skyy/clinder</a>
                                 </p>
                             </div>
                             <div class="flex flex-col">
                                 <!-- Status -->
-                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-purple-400/10 text-purple-300 h-fit">Completed</span>
+                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-pink-300/10 text-pink-300 h-fit">Completed</span>
                                 <!-- Date -->
                                 <span class="whitespace-nowrap rounded-full px-4 py-1 font-semibold text-gray-500 h-fit">Aug 2023</span>    
                             </div>
@@ -172,12 +186,12 @@
                                 <p class="text-3xl font-light text-white">Quantum Entanglement</p>
                                 <!-- Link -->
                                 <p class="text-gray-400">
-                                    − <a class="text-xl text-purple-600" href="https://github.com/mit-mit-randomprojectlab/team_myctl_pyweek33" target="_blank">github.com/mit-mit-randomprojectlab/team_myctl_pyweek33</a>
+                                    − <a class="text-xl text-purple-300/70" href="https://github.com/mit-mit-randomprojectlab/team_myctl_pyweek33" target="_blank">github.com/mit-mit-randomprojectlab/team_myctl_pyweek33</a>
                                 </p>
                             </div>
                             <div class="flex flex-col">
                                 <!-- Status -->
-                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-purple-400/10 text-purple-300 h-fit">Completed</span>
+                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-pink-300/10 text-pink-300 h-fit">Completed</span>
                                 <!-- Date -->
                                 <span class="whitespace-nowrap rounded-full px-4 py-1 font-semibold text-gray-500 h-fit">Aug 2023</span>    
                             </div>
@@ -202,12 +216,12 @@
                                 <p class="text-3xl font-light text-white">Sistem Pengurusan Pertandingan Catur (SPPC)</p>
                                 <!-- Link -->
                                 <p class="text-gray-400">
-                                    − <a class="text-xl text-purple-600" href="https://github.com/l4n1skyy/SPPC" target="_blank">github.com/l4n1skyy/SPPC</a>
+                                    − <a class="text-xl text-purple-300/70" href="https://github.com/l4n1skyy/SPPC" target="_blank">github.com/l4n1skyy/SPPC</a>
                                 </p>
                             </div>
                             <div class="flex flex-col px-1">
                                 <!-- Status -->
-                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-purple-400/10 text-purple-300 h-fit">Completed</span>
+                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-pink-300/10 text-pink-300 h-fit">Completed</span>
                                 <!-- Date -->
                                 <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold text-gray-500 h-fit">June 2022</span>    
                             </div>
@@ -216,7 +230,7 @@
                         <p class="text-xl text-gray-400 whitespace-pre-wrap">SPPC is a program to manage chess competitions (round robin). I made this program for a school project, the system language is Malay.</p>
                         <!-- Tags -->
                         <div class="justify-start">
-                            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Software Engineering</span>
+                            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Web Dev</span>
                             <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">PHP</span>
                             <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">CSS</span>
                             <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">HTML</span>
@@ -234,15 +248,15 @@
                                 <p class="text-3xl font-light text-white">CS50x</p>
                                 <!-- Link -->
                                 <p class="text-gray-400">
-                                    − <a class="text-xl text-purple-600" href="https://cs50.harvard.edu/x/2021/" target="_blank">cs50x 2021</a>
+                                    − <a class="text-xl text-purple-300/70" href="https://cs50.harvard.edu/x/2021/" target="_blank">cs50x 2021</a>
                                 </p>
                                 <p class="text-gray-400">
-                                    − <a class="text-xl text-purple-600" href="https://cs50.harvard.edu/certificates/6a1a1785-770e-4212-8921-2e67f8f3c44d" target="_blank">certificate</a>
+                                    − <a class="text-xl text-purple-300/70" href="https://cs50.harvard.edu/certificates/6a1a1785-770e-4212-8921-2e67f8f3c44d" target="_blank">certificate</a>
                                 </p>
                             </div>
                             <div class="flex flex-col px-1">
                                 <!-- Status -->
-                                <span class="whitespace-nowrap rounded-full px-5 py-1 font-semibold bg-purple-400/10 text-purple-300 h-fit">Completed</span>
+                                <span class="whitespace-nowrap rounded-full px-5 py-1 font-semibold bg-pink-300/10 text-pink-300 h-fit">Completed</span>
                                 <!-- Date -->
                                 <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold text-gray-500 h-fit">2021 - 2022</span>    
                             </div>
@@ -253,6 +267,7 @@
                         <div class="justify-start">
                             <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Computer Science</span>
                             <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Software Engineering</span>
+                            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Web Dev</span>
                             <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">C</span>
                             <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">Python</span>
                             <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">SQL</span>
@@ -271,7 +286,7 @@
                                 <p class="text-3xl font-light text-white">Personal Website</p>
                                 <!-- Link -->
                                 <p class="text-gray-400">
-                                    − <a class="text-xl text-purple-600" href="https://l4n1skyy.github.io" target="_blank">https://l4n1skyy.github.io</a>
+                                    − <a class="text-xl text-purple-300/70" href="https://l4n1skyy.github.io" target="_blank">https://l4n1skyy.github.io</a>
                                 </p>
                             </div>
                             <div class="flex flex-col">
@@ -285,7 +300,7 @@
                         <p class="text-xl text-gray-400 whitespace-pre-wrap">I made it when I was extremely bored during mco, and nowdays I upgrade it whenever I feel like wasting time ;D</p>
                         <!-- Tags -->
                         <div class="justify-start">
-                            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Software Engineering</span>
+                            <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-400/10 m-1 inline-block text-lime-300">Web Dev</span>
                             <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">JavaScript</span>
                             <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">HTML</span>
                             <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-400/10 m-1 inline-block text-sky-300">CSS</span>
