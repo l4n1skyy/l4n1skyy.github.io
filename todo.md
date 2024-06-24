@@ -1,7 +1,0 @@
-- improve code organization
-  - use templates
-  - seperate javascript
-  - seperate css 
-    - for each element so can remove from html
-  - remove unnecessary divs
-- add footer
