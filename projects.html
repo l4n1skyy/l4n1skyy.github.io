@@ -11,42 +11,42 @@
 </head>
 
 <body class="bg-slate-900 flex flex-col" style="font-family: 'Cozette';">
-    <div class="flex flex-col md:flex-row h-max">
+    <div class="flex flex-col md:flex-row h-max md:w-fit">
 
         <!-- Left -->
-        <div class="self-start md:sticky top-0 h-auto w-full flex flex-col px-20 pt-20">
-            <div class="mx-auto my-auto space-y-6">
-
+        <div class="md:self-start md:sticky md:top-0 md:h-auto md:w-full flex flex-col md:px-20 md:pt-20 pt-10 ml-4 md:ml-0">
+            <div class="md:ml-4">
                 <!-- Title -->
-                <p class="text-purple-400 font-bold text-7xl"><a class="text-lime-200" href="./index.html">< </a>My Projects</p>
-                
+                <p class="text-purple-400 font-bold text-5xl md:text-7xl"><a class="text-lime-200" href="./index.html">< </a>My Projects</p>
+
                 <!-- Description -->
-                <p class="text-slate-600 font-semibold text-2xl ml-4">My current, past and future projects</p>
-                
-                <!-- Tags -->
+                <p class="text-slate-600 font-semibold text-lg md:text-2xl md:ml-4">My current, past and future projects</p>
+
+            </div>
+            <div class="mx-auto my-auto md:space-y-6 space-y-1">
 
                 <!-- Reset Tag -->
-                <div class="flex flex-wrap">
-                    <button onclick="location.reload()" class="hover:outline hover:outline-2 hover:outline-slate-700 hover:border-transparent whitespace-nowrap rounded-full border-dashed border-2 border-slate-500 px-3 py-1 font-semibold bg-slate-400/10 m-1 inline-block text-slate-400">Reset</button>
+                <div class="flex flex-wrap text-xs md:text-base">
+                    <button onclick="location.reload()" class="mt-4 md:mt-8 hover:outline hover:outline-2 hover:outline-slate-700 hover:border-transparent whitespace-nowrap rounded-full border-dashed border-2 border-slate-500 px-3 py-1 font-semibold bg-slate-400/10 m-1 inline-block text-slate-400">Reset</button>
                 </div>
 
                 <!-- Type Tags -->
-                <div class="flex flex-wrap">
+                <div class="flex flex-wrap text-xs md:text-base">
                     <!-- Computer Science -->
-                    <button onclick="filter('cs50x')" class="hover:outline hover:outline-2 hover:outline-lime-800/90 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 m-1 inline-block text-lime-500">Computer Science</button>
+                    <button onclick="filter('cs50x')" class="hover:outline hover:outline-2 hover:outline-lime-800/90 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 md:m-1 m-0.5 inline-block text-lime-500">Computer Science</button>
                     <!-- Data Analytics -->
-                    <button onclick="filter('gdsc')" class="hover:outline hover:outline-2 hover:outline-lime-800/90 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 m-1 inline-block text-lime-500">Data Analytics</button>
+                    <button onclick="filter('gdsc')" class="hover:outline hover:outline-2 hover:outline-lime-800/90 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 md:m-1 m-0.5 inline-block text-lime-500">Data Analytics</button>
                     <!-- Software Engineering -->
-                    <button onclick="filter('polybar-ping','clinder','cs50x')" class="hover:outline hover:outline-2 hover:outline-lime-800/90 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 m-1 inline-block text-lime-500">Software Engineering</button>
+                    <button onclick="filter('polybar-ping','clinder','cs50x')" class="hover:outline hover:outline-2 hover:outline-lime-800/90 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 md:m-1 m-0.5 inline-block text-lime-500">Software Engineering</button>
                     <!-- Web Devlopment -->
-                    <button onclick="filter('toad-do','sppc','personal-website','cs50x')" class="hover:outline hover:outline-2 hover:outline-lime-800/90 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 m-1 inline-block text-lime-500">Web Development</button>
+                    <button onclick="filter('toad-do','sppc','personal-website','cs50x')" class="hover:outline hover:outline-2 hover:outline-lime-800/90 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 md:m-1 m-0.5 inline-block text-lime-500">Web Development</button>
                     <!-- Game Development -->
-                    <button onclick="filter('quantum-entanglement')" class="hover:outline hover:outline-2 hover:outline-lime-800/90 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 m-1 inline-block text-lime-500">Game Development</button>
+                    <button onclick="filter('quantum-entanglement')" class="hover:outline hover:outline-2 hover:outline-lime-800/90 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 md:m-1 m-0.5 inline-block text-lime-500">Game Development</button>
                 </div>
 
                 <!-- Language Tags -->
-                <div class="flex flex-wrap">
-                    <div class="bg-[#141d32] m-2 p-2 rounded-xl w-52">
+                <div class="flex flex-wrap text-xs md:text-base">
+                    <div class="bg-[#141d32] md:m-2 md:p-2 p-1 m-1 rounded-xl w-52">
                         <!-- C -->
                         <button onclick="filter('cs50x')" class="hover:outline hover:outline-2 hover:outline-sky-800 hover:outline-opacity-50 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">C</button>
                         <!-- C++ -->
@@ -56,7 +56,7 @@
                         <!-- shell -->
                         <button onclick="filter('polybar-ping')" class="hover:outline hover:outline-2 hover:outline-sky-800 hover:outline-opacity-50 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">Shell</button>
                     </div>
-                    <div class="bg-[#141d32] m-2 p-2 rounded-xl w-52">
+                    <div class="bg-[#141d32] md:m-2 md:p-2 p-1 m-1 rounded-xl w-52 text-xs md:text-base">
                         <!-- HTML -->
                         <button onclick="filter('pengyou','toad-do','cs50x','sppc','personal-website')" class="hover:outline hover:outline-2 hover:outline-sky-800 hover:outline-opacity-50 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">HTML</button>
                         <!-- CSS -->
@@ -77,7 +77,7 @@
                         <button onclick="filter('cs50x')" class="hover:outline hover:outline-2 hover:outline-sky-800 hover:outline-opacity-50 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">SQL</button>
                     </div>
 
-                    <div class="bg-[#141d32] m-2 p-2 rounded-xl w-52">
+                    <div class="bg-[#141d32] md:m-2 md:p-2 p-1 m-1 rounded-xl w-52 text-xs md:text-base">
                         <!-- Java -->
                         <button onclick="filter('')" class="hover:outline hover:outline-2 hover:outline-sky-800 hover:outline-opacity-50 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">Java</button>
                     </div>
@@ -86,17 +86,17 @@
                 </div>
 
                 <!-- Status Tags -->
-                <div class="flex flex-wrap">
+                <div class="flex flex-wrap text-xs mt-1 md:text-base">
                     <!-- Archived -->
-                    <button onclick="filter('gdsc')" class="hover:outline hover:outline-2 hover:outline-orange-600/40 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-red-500/10 text-orange-400 m-1 h-fit">Archived</button>
+                    <button onclick="filter('gdsc')" class="hover:outline hover:outline-2 hover:outline-orange-600/40 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-red-500/10 text-orange-400 md:m-1 m-0.5 h-fit">Archived</button>
                     <!-- Paused -->
                     <button onclick="filter()" class="hover:outline hover:outline-2 hover:outline-yellow-600/60 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-yellow-500/10 text-yellow-500 m-1 h-fit">Paused</button>
                     <!-- Completed -->
-                    <button onclick="filter('pengyou','toad-do','polybar-ping', 'clinder', 'quantum-entanglement', 'sppc', 'cs50x')" class="hover:outline hover:outline-2 hover:outline-pink-500/50 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-pink-400/10 text-pink-400 m-1 h-fit">Completed</button>
+                    <button onclick="filter('pengyou','toad-do','polybar-ping', 'clinder', 'quantum-entanglement', 'sppc', 'cs50x')" class="hover:outline hover:outline-2 hover:outline-pink-500/50 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-pink-400/10 text-pink-400 md:m-1 m-0.5 h-fit">Completed</button>
                     <!-- Planned -->
-                    <button onclick="filter()" class="hover:outline hover:outline-2 hover:outline-cyan-600/60 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-cyan-400/10 text-cyan-400 m-1 h-fit">Planned</button>
+                    <button onclick="filter()" class="hover:outline hover:outline-2 hover:outline-cyan-600/60 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-cyan-400/10 text-cyan-400 md:m-1 m-0.5 h-fit">Planned</button>
                     <!-- Active -->
-                    <button onclick="filter('personal-website')" class="hover:outline hover:outline-2 hover:outline-emerald-600/60 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-emerald-400/10 text-emerald-400 m-1 h-fit">Active</button>
+                    <button onclick="filter('personal-website')" class="hover:outline hover:outline-2 hover:outline-emerald-600/60 whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-emerald-400/10 text-emerald-400 md:m-1 m-0.5 h-fit">Active</button>
                 </div>
 
                 <!-- Tags End -->
@@ -106,340 +106,340 @@
         <!-- Left End -->
 
         <!-- Right -->
-        <div class="w-full pt-32 pb-20 flex flex-col">
-            <p class="text-5xl text-white font-light ml-5">Projects:</p>
-            <div class="w-fit flex flex-wrap mx-auto">
-                
-                <!-- PengYou -->
-                <div id="pengyou" class=" w-96 project mr-5 my-3 px-0 py-0 bg-slate-800/50 rounded-lg">
-                    <!-- problem: make elements centered -->
-                    <div class="mx-auto my-auto">
-                    <!-- problem end -->
-                        <div class="mx-10 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
-                            <div class="flex justify-between">
-                                <div>
-                                    <!-- Title -->
-                                    <p class="text-3xl font-light text-white">PengYou</p>
-                                    <!-- Link -->
-                                    <p class="text-slate-400 text-nowrap">
-                                        − <a class="text-xl text-purple-300/70 hover:text-purple-300 underline" href="https://pengyou.vercel.app/" target="_blank">test app</a>
-                                    </p>
-                                    <p class="text-slate-400 text-nowrap">
-                                        − <a class="text-xl text-purple-300/70 hover:text-purple-300 underline" href="https://github.com/Spimy/pengyou" target="_blank">github repo</a>
-                                    </p>
-                                    <p class="text-slate-400 text-nowrap">
-                                        − <a class="underline text-xl text-purple-300/70 hover:text-purple-300" href="https://www.linkedin.com/posts/alexcheekaihong_imaginehack2024-activity-7205937571774750720-TCng?utm_source=share&utm_medium=member_desktop" target="_blank">linkedin post</a>
-                                    </p>
+            <div class="md:w-full md:pt-32 pb-20 flex flex-col m-4">
+                <p class="text-xl md:text-5xl text-white font-light md:ml-5">Projects:</p>
+                <div class="flex md:flex-wrap flex-col md:flex-row">
+                    <!-- PengYou -->
+                    <div id="pengyou" class="md:w-96 project md:mr-5 md:my-3 my-1 px-0 py-0 bg-slate-800/50 rounded-lg">
+                        <!-- problem: make elements centered -->
+                        <div class="mx-auto my-auto">
+                        <!-- problem end -->
+                            <div class="mx-10 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
+                                <div class="flex justify-between">
+                                    <div>
+                                        <!-- Title -->
+                                        <p class="md:text-3xl text-lg font-light text-white">PengYou</p>
+                                        <!-- Link -->
+                                        <p class="text-slate-400 text-nowrap">
+                                            − <a class="text-xs md:text-xl text-purple-300/70 hover:text-purple-300 underline" href="https://pengyou.vercel.app/" target="_blank">test app</a>
+                                        </p>
+                                        <p class="text-slate-400 text-nowrap">
+                                            − <a class="text-xs md:text-xl text-purple-300/70 hover:text-purple-300 underline" href="https://github.com/Spimy/pengyou" target="_blank">github repo</a>
+                                        </p>
+                                        <p class="text-slate-400 text-nowrap">
+                                            − <a class="underline text-xs md:text-xl text-purple-300/70 hover:text-purple-300" href="https://www.linkedin.com/posts/alexcheekaihong_imaginehack2024-activity-7205937571774750720-TCng?utm_source=share&utm_medium=member_desktop" target="_blank">linkedin post</a>
+                                        </p>
+                                    </div>
+                                    <div class="flex flex-col text-xs md:text-base ">
+                                        <!-- Status -->
+                                        <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-pink-400/10 text-pink-400 h-fit">Completed</span>
+                                        <!-- Date -->
+                                        <span class="whitespace-nowrap rounded-full px-2 py-1 font-semibold text-slate-500 h-fit">June 2024</span>    
+                                    </div>
                                 </div>
-                                <div class="flex flex-col">
-                                    <!-- Status -->
-                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-pink-400/10 text-pink-400 h-fit">Completed</span>
-                                    <!-- Date -->
-                                    <span class="whitespace-nowrap rounded-full px-2 py-1 font-semibold text-slate-500 h-fit">June 2024</span>    
+        
+        
+                                <!-- Description -->
+                                <p class="text-sm md:text-xl text-slate-400 whitespace-pre-wrap text-pretty">I joined a 48 hour hackathon, my team made a budgeting app with a cute pet called PengYou. We won two cash prizes, best pitch and 2nd place!</p>
+                                <!-- Tags -->
+                                <div class="justify-start text-xs md:text-base">
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 m-1 inline-block text-lime-500">Web Development</span>
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">Tailwind</span>
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">Svelte</span>
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">Sveltekit</span>
                                 </div>
-                            </div>
-    
-    
-                            <!-- Description -->
-                            <p class="text-xl text-slate-400 whitespace-pre-wrap text-pretty">I joined a 48 hour hackathon, my team made a budgeting app with a cute pet called PengYou. We won two cash prizes, best pitch and 2nd place!</p>
-                            <!-- Tags -->
-                            <div class="justify-start">
-                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 m-1 inline-block text-lime-500">Web Development</span>
-                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">Tailwind</span>
-                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">Svelte</span>
-                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">Sveltekit</span>
-                            </div>
-                        </div>    
+                            </div>    
+                        </div>
                     </div>
-                </div>
-
-
-                <!-- Toad Do -->
-                <div id="toad-do" class=" w-96 project mr-5 my-3 px-0 py-0 bg-slate-800/50 rounded-lg">
-                    <div class="mx-auto my-auto">
-                        <div class="mx-10 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
-                            <div class="flex justify-between">
-                                <div>
-                                    <!-- Title -->
-                                    <p class="text-3xl font-light text-white">Toad-Do</p>
-                                    <!-- Link -->
-                                    <p class="text-slate-400 text-nowrap">
-                                        − <a class="underline text-xl text-purple-300/70 hover:text-purple-300" href="https://l4n1skyy.github.io/Toad-Do" target="_blank">test app</a>
-                                    </p>
-                                    <p class="text-slate-400 text-nowrap">
-                                        − <a class="underline text-xl text-purple-300/70 hover:text-purple-300" href="https://github.com/l4n1skyy/Toad-Do" target="_blank">github repo</a>
-                                    </p>
-                                </div>
-                                <div class="flex flex-col">
-                                    <!-- Status -->
-                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-pink-400/10 text-pink-400 h-fit">Completed</span>
-                                    <!-- Date -->
-                                    <span class="whitespace-nowrap rounded-full px-2 py-1 font-semibold text-slate-500 h-fit">March 2024</span>    
-                                </div>
-                            </div>
     
     
-                            <!-- Description -->
-                            <p class="text-xl text-slate-400 whitespace-pre-wrap">A simple and pleasant task manager I made to practice CSS flexbox and grids as well as javascript.</p>
-                            <!-- Tags -->
-                            <div class="justify-start">
-                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 m-1 inline-block text-lime-500">Web Development</span>
-                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">Tailwind</span>
-                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">HTML</span>
-                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">JavaScript</span>
-                            </div>
-                        </div>    
+                    <!-- Toad Do -->
+                    <div id="toad-do" class=" md:w-96 project md:mr-5 md:my-3 my-1 px-0 py-0 bg-slate-800/50 rounded-lg">
+                        <div class="mx-auto my-auto">
+                            <div class="mx-10 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
+                                <div class="flex justify-between">
+                                    <div>
+                                        <!-- Title -->
+                                        <p class="md:text-3xl text-lg font-light text-white">Toad-Do</p>
+                                        <!-- Link -->
+                                        <p class="text-slate-400 text-nowrap">
+                                            − <a class="underline text-xs md:text-xl text-purple-300/70 hover:text-purple-300" href="https://l4n1skyy.github.io/Toad-Do" target="_blank">test app</a>
+                                        </p>
+                                        <p class="text-slate-400 text-nowrap">
+                                            − <a class="underline text-xs md:text-xl text-purple-300/70 hover:text-purple-300" href="https://github.com/l4n1skyy/Toad-Do" target="_blank">github repo</a>
+                                        </p>
+                                    </div>
+                                    <div class="flex flex-col text-xs md:text-base">
+                                        <!-- Status -->
+                                        <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-pink-400/10 text-pink-400 h-fit">Completed</span>
+                                        <!-- Date -->
+                                        <span class="whitespace-nowrap rounded-full px-2 py-1 font-semibold text-slate-500 h-fit">March 2024</span>    
+                                    </div>
+                                </div>
+        
+        
+                                <!-- Description -->
+                                <p class="text-sm md:text-xl text-slate-400 whitespace-pre-wrap">A simple and pleasant task manager I made to practice CSS flexbox and grids as well as javascript.</p>
+                                <!-- Tags -->
+                                <div class="justify-start text-xs md:text-base">
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 m-1 inline-block text-lime-500">Web Development</span>
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">Tailwind</span>
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">HTML</span>
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">JavaScript</span>
+                                </div>
+                            </div>    
+                        </div>
                     </div>
-                </div>
-
-                <!-- GDSC -->
-                <div id="gdsc" class="w-96 project mr-5 my-3 px-0 py-0 bg-slate-800/50 rounded-lg">
-                    <div class="mx-auto my-auto">
-                        <div class="mx-10 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
-                            <div class="flex justify-between">
-                                <div class="w-3/4">
-                                    <!-- Title -->
-                                    <p class="text-3xl font-light text-white">Google Data Analytics Professional Certificate</p>
-                                    <!-- Link -->
-                                    <div class="text-slate-400 flex flex-nowrap">
-                                        <p>-&nbsp;</p>
-                                        <a class="underline text-xl text-purple-300/70 hover:text-purple-300" href="https://www.coursera.org/professional-certificates/google-data-analytics" target="_blank">coursera.org/professional-certificates/google-data-analytics</a>
-                                    </div> 
+    
+                    <!-- GDSC -->
+                    <div id="gdsc" class="md:w-96 project md:mr-5 md:my-3 my-1 px-0 py-0 bg-slate-800/50 rounded-lg">
+                        <div class="mx-auto my-auto">
+                            <div class="mx-10 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
+                                <div class="flex justify-between">
+                                    <div class="w-3/4">
+                                        <!-- Title -->
+                                        <p class="md:text-3xl text-lg font-light text-white">Google Data Analytics Professional Certificate</p>
+                                        <!-- Link -->
+                                        <div class="text-slate-400 flex flex-nowrap">
+                                            <p>-&nbsp;</p>
+                                            <a class="underline text-xs md:text-xl text-purple-300/70 hover:text-purple-300" href="https://www.coursera.org/professional-certificates/google-data-analytics" target="_blank">coursera.org/professional-certificates/google-data-analytics</a>
+                                        </div> 
+                                    </div>
+                                    <div class="flex flex-col md:mr-1 text-xs md:text-base">
+                                        <!-- Status -->
+                                        <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-red-500/10 text-orange-400 h-fit">Archived</span>
+                                        <!-- Date -->
+                                        <span class="whitespace-nowrap rounded-full px-2 py-1 font-semibold text-slate-500 h-fit">July 2023</span>    
+                                    </div>
                                 </div>
-                                <div class="flex flex-col mr-1">
-                                    <!-- Status -->
-                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-red-500/10 text-orange-400 h-fit">Archived</span>
-                                    <!-- Date -->
-                                    <span class="whitespace-nowrap rounded-full px-2 py-1 font-semibold text-slate-500 h-fit">July 2023</span>    
+                           
+                                <!-- Description -->
+                                <p class="text-sm md:text-xl text-slate-400 whitespace-pre-wrap">I was interested to know more about the field of data analytics, so I enrolled in this course with a sponsorship from Girls in Tech KL (GIT).</p>
+                                <!-- Tags -->
+                                <div class="justify-start text-xs md:text-base">
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 m-1 inline-block text-lime-500">Data Analytics</span>
                                 </div>
                             </div>
-                       
-                            <!-- Description -->
-                            <p class="text-xl text-slate-400 whitespace-pre-wrap">I was interested to know more about the field of data analytics, so I enrolled in this course with a sponsorship from Girls in Tech KL (GIT).</p>
-                            <!-- Tags -->
-                            <div class="justify-start">
-                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 m-1 inline-block text-lime-500">Data Analytics</span>
+                        </div>
+    v                </div>
+    
+    
+                    <!-- Polybar Ping -->
+                    <div id="polybar-ping" class="md:w-96 project md:mr-5 md:my-3 my-1 px-0 py-0 bg-slate-800/50 rounded-lg">
+                        <div class="mx-auto my-auto">
+                            <div class="mx-10 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
+                                <div class="flex justify-between">
+                                    <div>
+                                        <!-- Title -->
+                                        <p class="md:text-3xl text-lg font-light text-white">Polybar Ping</p>
+                                        <!-- Link -->
+                                        <p class="text-slate-400 text-nowrap">
+                                            − <a class="underline text-xs md:text-xl text-purple-300/70 hover:text-purple-300" href="https://github.com/l4n1skyy/polybar-ping" target="_blank">github repo</a>
+                                        </p>
+        
+                                    </div>
+                                    <div class="flex flex-col text-xs md:text-base">
+                                        <!-- Status -->
+                                        <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-pink-400/10 text-pink-400 h-fit">Completed</span>
+                                        <!-- Date -->
+                                        <span class="whitespace-nowrap rounded-full px-4 py-1 font-semibold text-slate-500 h-fit">Aug 2023</span>    
+                                    </div>
+                                </div>
+                                <!-- Description -->
+                                <p class="text-sm md:text-xl text-slate-400 whitespace-pre-wrap">Shows ping in polybar.. why? idk I'm used to seeing ping in games as a indicator of good/bad internet soo yea, prefer this to polybar's default KB.</p>
+                                <!-- Tags -->
+                                <div class="justify-start text-xs md:text-base">
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 m-1 inline-block text-lime-500">Software Engineering</span>
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">Shell</span>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+    
+    
+                    <!-- Clinder -->
+                    <div id="clinder" class="md:w-96 project md:mr-5 md:my-3 my-1 px-0 py-0 bg-slate-800/50 rounded-lg">
+                        <div class="mx-auto my-auto">
+                            <div class="mx-10 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
+                                <div class="flex justify-between">
+                                    <div>
+                                        <!-- Title -->
+                                        <p class="md:text-3xl text-lg font-light text-white">Clinder</p>
+                                        <!-- Link -->
+                                        <p class="text-slate-400 text-nowrap">
+                                            − <a class="underline text-xs md:text-xl text-purple-300/70 hover:text-purple-300" href="https://github.com/l4n1skyy/clinder" target="_blank">github repo</a>
+                                        </p>
+        
+                                    </div>
+                                    <div class="flex flex-col text-xs md:text-base">
+                                        <!-- Status -->
+                                        <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-pink-400/10 text-pink-400 h-fit">Completed</span>
+                                        <!-- Date -->
+                                        <span class="whitespace-nowrap rounded-full px-4 py-1 font-semibold text-slate-500 h-fit">Aug 2023</span>    
+                                    </div>
+                                </div>
+                                <!-- Description -->
+                                <p class="text-sm md:text-xl text-slate-400 whitespace-pre-wrap">Command line interface for google calendar I made as CS50x final project.</p>
+                                <!-- Tags -->
+                                <div class="justify-start text-xs md:text-base">
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 m-1 inline-block text-lime-500">Software Engineering</span>
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">Python</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-v                </div>
-
-
-                <!-- Polybar Ping -->
-                <div id="polybar-ping" class="w-96 project mr-5 my-3 px-0 py-0 bg-slate-800/50 rounded-lg">
-                    <div class="mx-auto my-auto">
-                        <div class="mx-10 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
-                            <div class="flex justify-between">
-                                <div>
-                                    <!-- Title -->
-                                    <p class="text-3xl font-light text-white">Polybar Ping</p>
-                                    <!-- Link -->
-                                    <p class="text-slate-400 text-nowrap">
-                                        − <a class="underline text-xl text-purple-300/70 hover:text-purple-300" href="https://github.com/l4n1skyy/polybar-ping" target="_blank">github repo</a>
-                                    </p>
     
-                                </div>
-                                <div class="flex flex-col">
-                                    <!-- Status -->
-                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-pink-400/10 text-pink-400 h-fit">Completed</span>
-                                    <!-- Date -->
-                                    <span class="whitespace-nowrap rounded-full px-4 py-1 font-semibold text-slate-500 h-fit">Aug 2023</span>    
-                                </div>
-                            </div>
-                            <!-- Description -->
-                            <p class="text-xl text-slate-400 whitespace-pre-wrap">Shows ping in polybar.. why? idk I'm used to seeing ping in games as a indicator of good/bad internet soo yea, prefer this to polybar's default KB.</p>
-                            <!-- Tags -->
-                            <div class="justify-start">
-                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 m-1 inline-block text-lime-500">Software Engineering</span>
-                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">Shell</span>
-                            </div>
-                        </div>    
-                    </div>
-                </div>
-
-
-                <!-- Clinder -->
-                <div id="clinder" class="w-96 project mr-5 my-3 px-0 py-0 bg-slate-800/50 rounded-lg">
-                    <div class="mx-auto my-auto">
-                        <div class="mx-10 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
-                            <div class="flex justify-between">
-                                <div>
-                                    <!-- Title -->
-                                    <p class="text-3xl font-light text-white">Clinder</p>
-                                    <!-- Link -->
-                                    <p class="text-slate-400 text-nowrap">
-                                        − <a class="underline text-xl text-purple-300/70 hover:text-purple-300" href="https://github.com/l4n1skyy/clinder" target="_blank">github repo</a>
-                                    </p>
     
+                    <!-- Quantum Entanglement -->
+                    <div id="quantum-entanglement" class="md:w-96 project md:mr-5 md:my-3 my-1 px-0 py-0 bg-slate-800/50 rounded-lg">
+                        <div class="mx-auto my-auto">
+                            <div class="mx-10 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
+                                <div class="flex justify-between">
+                                    <div>
+                                        <!-- Title -->
+                                        <p class="md:text-3xl text-lg font-light text-white">Quantum Entanglement</p>
+                                        <!-- Link -->
+                                        <p class="text-slate-400">
+                                            − <a class="underline text-xs md:text-xl text-purple-300/70 hover:text-purple-300" href="https://github.com/mit-mit-randomprojectlab/team_myctl_pyweek33" target="_blank">github repo</a>
+                                        </p>
+                                        <p class="text-slate-400">
+                                            − <a class="underline text-xs md:text-xl text-purple-300/70 hover:text-purple-300" href="https://www.youtube.com/watch?v=5AHixv2CV7Q" target="_blank">youtube video</a>
+                                        </p>
+                                        <p class="text-slate-400">
+                                            − <a class="underline text-xs md:text-xl text-purple-300/70 hover:text-purple-300" href="https://pyweek.org/33/ratings/" target="_blank">pyweek rankings</a>
+                                        </p>
+                                    </div>
+                                    <div class="flex flex-col text-xs md:text-base">
+                                        <!-- Status -->
+                                        <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-pink-400/10 text-pink-400 h-fit">Completed</span>
+                                        <!-- Date -->
+                                        <span class="whitespace-nowrap rounded-full px-4 py-1 font-semibold text-slate-500 h-fit">Aug 2023</span>    
+                                    </div>
                                 </div>
-                                <div class="flex flex-col">
-                                    <!-- Status -->
-                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-pink-400/10 text-pink-400 h-fit">Completed</span>
-                                    <!-- Date -->
-                                    <span class="whitespace-nowrap rounded-full px-4 py-1 font-semibold text-slate-500 h-fit">Aug 2023</span>    
+        
+        
+                                <!-- Description -->
+                                <p class="text-sm md:text-xl text-slate-400 whitespace-pre-wrap">A game made by me and my team, Team MYCTL for PyWeek March 2022. We won second place :D</p>
+                                <!-- Tags -->
+                                <div class="justify-start text-xs md:text-base">
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 m-1 inline-block text-lime-500">Game Dev</span>
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">Python</span>
                                 </div>
-                            </div>
-                            <!-- Description -->
-                            <p class="text-xl text-slate-400 whitespace-pre-wrap">Command line interface for google calendar I made as CS50x final project.</p>
-                            <!-- Tags -->
-                            <div class="justify-start">
-                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 m-1 inline-block text-lime-500">Software Engineering</span>
-                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">Python</span>
                             </div>
                         </div>
                     </div>
-                </div>
-
-
-                <!-- Quantum Entanglement -->
-                <div id="quantum-entanglement" class="w-96 project mr-5 my-3 px-0 py-0 bg-slate-800/50 rounded-lg">
-                    <div class="mx-auto my-auto">
-                        <div class="mx-10 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
-                            <div class="flex justify-between">
-                                <div>
-                                    <!-- Title -->
-                                    <p class="text-3xl font-light text-white">Quantum Entanglement</p>
-                                    <!-- Link -->
-                                    <p class="text-slate-400">
-                                        − <a class="underline text-xl text-purple-300/70 hover:text-purple-300" href="https://github.com/mit-mit-randomprojectlab/team_myctl_pyweek33" target="_blank">github repo</a>
-                                    </p>
-                                    <p class="text-slate-400">
-                                        − <a class="underline text-xl text-purple-300/70 hover:text-purple-300" href="https://www.youtube.com/watch?v=5AHixv2CV7Q" target="_blank">youtube video</a>
-                                    </p>
-                                    <p class="text-slate-400">
-                                        − <a class="underline text-xl text-purple-300/70 hover:text-purple-300" href="https://pyweek.org/33/ratings/" target="_blank">pyweek rankings</a>
-                                    </p>
-                                </div>
-                                <div class="flex flex-col">
-                                    <!-- Status -->
-                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-pink-400/10 text-pink-400 h-fit">Completed</span>
-                                    <!-- Date -->
-                                    <span class="whitespace-nowrap rounded-full px-4 py-1 font-semibold text-slate-500 h-fit">Aug 2023</span>    
-                                </div>
-                            </div>
     
     
-                            <!-- Description -->
-                            <p class="text-xl text-slate-400 whitespace-pre-wrap">A game made by me and my team, Team MYCTL for PyWeek March 2022. We won second place :D</p>
-                            <!-- Tags -->
-                            <div class="justify-start">
-                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 m-1 inline-block text-lime-500">Game Dev</span>
-                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">Python</span>
+                    <!-- SPPC -->
+                    <div id="sppc" class="md:w-96 project md:mr-5 md:my-3 my-1 px-0 py-0 bg-slate-800/50 rounded-lg">
+                        <div class="mx-auto my-auto">
+                            <div class="mx-10 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
+                                <div class="flex justify-between">
+                                    <div class="w-3/5">
+                                        <!-- Title -->
+                                        <p class="md:text-3xl text-lg font-light text-white">Sistem Pengurusan Pertandingan Catur (SPPC)</p>
+                                        <!-- Link -->
+                                        <p class="text-slate-400 text-nowrap">
+                                            − <a class="underline text-xs md:text-xl text-purple-300/70 hover:text-purple-300" href="https://github.com/l4n1skyy/SPPC" target="_blank">github repo</a>
+                                        </p>
+                                    </div>
+                                    <div class="flex flex-col px-1 text-xs md:text-base">
+                                        <!-- Status -->
+                                        <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-pink-400/10 text-pink-400 h-fit">Completed</span>
+                                        <!-- Date -->
+                                        <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold text-slate-500 h-fit">June 2022</span>    
+                                    </div>
+                                </div>
+                                <!-- Description -->
+                                <p class="text-sm md:text-xl text-slate-400 whitespace-pre-wrap">SPPC is a program to manage chess competitions (round robin). I made this program for a school project, the system language is Malay.</p>
+                                <!-- Tags -->
+                                <div class="justify-start text-xs md:text-base">
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 m-1 inline-block text-lime-500">Web Development</span>
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">PHP</span>
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">Bootstrap</span>
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">HTML</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-
-                <!-- SPPC -->
-                <div id="sppc" class="w-96 project mr-5 my-3 px-0 py-0 bg-slate-800/50 rounded-lg">
-                    <div class="mx-auto my-auto">
-                        <div class="mx-10 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
-                            <div class="flex justify-between">
-                                <div class="w-3/5">
-                                    <!-- Title -->
-                                    <p class="text-3xl font-light text-white">Sistem Pengurusan Pertandingan Catur (SPPC)</p>
-                                    <!-- Link -->
-                                    <p class="text-slate-400 text-nowrap">
-                                        − <a class="underline text-xl text-purple-300/70 hover:text-purple-300" href="https://github.com/l4n1skyy/SPPC" target="_blank">github repo</a>
-                                    </p>
-                                </div>
-                                <div class="flex flex-col px-1">
-                                    <!-- Status -->
-                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-pink-400/10 text-pink-400 h-fit">Completed</span>
-                                    <!-- Date -->
-                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold text-slate-500 h-fit">June 2022</span>    
-                                </div>
-                            </div>
-                            <!-- Description -->
-                            <p class="text-xl text-slate-400 whitespace-pre-wrap">SPPC is a program to manage chess competitions (round robin). I made this program for a school project, the system language is Malay.</p>
-                            <!-- Tags -->
-                            <div class="justify-start">
-                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 m-1 inline-block text-lime-500">Web Development</span>
-                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">PHP</span>
-                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">Bootstrap</span>
-                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">HTML</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CS50x -->
-                <div id="cs50x" class="w-96 project mr-5 my-3 px-0 py-0 bg-slate-800/50 rounded-lg">
-                    <div class="mx-auto my-auto">
-                        <div class="mx-10 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
-                            <div class="flex justify-between">
-                                <div>
-                                    <!-- Title -->
-                                    <p class="text-3xl font-light text-white">CS50x</p>
-                                    <!-- Link -->
-                                    <p class="text-slate-400">
-                                        − <a class="underline text-xl text-purple-300/70 hover:text-purple-300" href="https://cs50.harvard.edu/x/2021/" target="_blank">cs50x 2021</a>
-                                    </p>
-                                    <p class="text-slate-400">
-                                        − <a class="underline text-xl text-purple-300/70 hover:text-purple-300" href="https://cs50.harvard.edu/certificates/6a1a1785-770e-4212-8921-2e67f8f3c44d" target="_blank">certificate</a>
-                                    </p>
-                                </div>
-                                <div class="flex flex-col px-1">
-                                    <!-- Status -->
-                                    <span class="whitespace-nowrap rounded-full px-5 py-1 font-semibold bg-pink-400/10 text-pink-400 h-fit">Completed</span>
-                                    <!-- Date -->
-                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold text-slate-500 h-fit">2021 - 2022</span>    
-                                </div>
-                            </div>
-                            <!-- Description -->
-                            <p class="text-xl text-slate-400 whitespace-pre-wrap">The best course I've ever taken- It teaches all the basics of programming and computer science, and provides some really tough programming challenges which make you enjoy programming.</p>
-                            <!-- Tags -->
-                            <div class="justify-start">
-                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 m-1 inline-block text-lime-500">Computer Science</span>
-                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 m-1 inline-block text-lime-500">Software Engineering</span>
-                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 m-1 inline-block text-lime-500">Web Development</span>
-                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">C</span>
-                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">Python</span>
-                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">SQL</span>
-                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">HTML</span>
-                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">CSS</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Personal Website -->
-                <div id="personal-website" class="w-96 project mr-5 my-3 px-0 py-0 bg-slate-800/50 rounded-lg">
-                    <div class="mx-auto my-auto">
-                        <div class="mx-10 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
-                            <div class="flex justify-between">
-                                <div>
-                                    <!-- Title -->
-                                    <p class="text-3xl font-light text-white">Personal Website</p>
-                                    <!-- Link -->
-                                    <p class="text-slate-400 text-nowrap">
-                                        − <a class="underline text-xl text-purple-300/70 hover:text-purple-300" href="https://l4n1skyy.github.io" target="_blank">test site</a>
-                                    </p>
-                                </div>
-                                <div class="flex flex-col">
-                                    <!-- Status -->
-                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-emerald-400/10 text-emerald-400 h-fit">Active</span>
-                                    <!-- Date -->
-                                    <span class="whitespace-nowrap rounded-full px-5 py-1 font-semibold text-slate-500 h-fit">2021</span>    
-                                </div>
-                            </div>
-                            <!-- Description -->
-                            <p class="text-xl text-slate-400 whitespace-pre-wrap">I made it when I was extremely bored during mco, and nowdays I upgrade it whenever I feel like wasting time ;D</p>
-                            <!-- Tags -->
-                            <div class="justify-start">
-                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 m-1 inline-block text-lime-500">Web Development</span>
-                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">JavaScript</span>
-                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">HTML</span>
-                                <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">Tailwind</span>
-                            </div>
-                        </div>
     
+                    <!-- CS50x -->
+                    <div id="cs50x" class="md:w-96 project md:mr-5 md:my-3 my-1 px-0 py-0 bg-slate-800/50 rounded-lg">
+                        <div class="mx-auto my-auto">
+                            <div class="mx-10 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
+                                <div class="flex justify-between">
+                                    <div>
+                                        <!-- Title -->
+                                        <p class="md:text-3xl text-lg font-light text-white">CS50x</p>
+                                        <!-- Link -->
+                                        <p class="text-slate-400">
+                                            − <a class="underline text-xs md:text-xl text-purple-300/70 hover:text-purple-300" href="https://cs50.harvard.edu/x/2021/" target="_blank">cs50x 2021</a>
+                                        </p>
+                                        <p class="text-slate-400">
+                                            − <a class="underline text-xs md:text-xl text-purple-300/70 hover:text-purple-300" href="https://cs50.harvard.edu/certificates/6a1a1785-770e-4212-8921-2e67f8f3c44d" target="_blank">certificate</a>
+                                        </p>
+                                    </div>
+                                    <div class="flex flex-col px-1 text-xs md:text-base">
+                                        <!-- Status -->
+                                        <span class="whitespace-nowrap rounded-full px-5 py-1 font-semibold bg-pink-400/10 text-pink-400 h-fit">Completed</span>
+                                        <!-- Date -->
+                                        <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold text-slate-500 h-fit">2021 - 2022</span>    
+                                    </div>
+                                </div>
+                                <!-- Description -->
+                                <p class="text-sm md:text-xl text-slate-400 whitespace-pre-wrap">The best course I've ever taken- It teaches all the basics of programming and computer science, and provides some really tough programming challenges which make you enjoy programming.</p>
+                                <!-- Tags -->
+                                <div class="justify-start text-xs md:text-base">
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 m-1 inline-block text-lime-500">Computer Science</span>
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 m-1 inline-block text-lime-500">Software Engineering</span>
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 m-1 inline-block text-lime-500">Web Development</span>
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">C</span>
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">Python</span>
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">SQL</span>
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">HTML</span>
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">CSS</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    
+                    <!-- Personal Website -->
+                    <div id="personal-website" class="md:w-96 project md:mr-5 md:my-3 my-1 px-0 py-0 bg-slate-800/50 rounded-lg">
+                        <div class="mx-auto my-auto">
+                            <div class="mx-10 my-10 rounded-lg h-fit space-y-2 flex flex-col relative">
+                                <div class="flex justify-between">
+                                    <div>
+                                        <!-- Title -->
+                                        <p class="md:text-3xl text-lg font-light text-white">Personal Website</p>
+                                        <!-- Link -->
+                                        <p class="text-slate-400 text-nowrap">
+                                            − <a class="underline text-xs md:text-xl text-purple-300/70 hover:text-purple-300" href="https://l4n1skyy.github.io" target="_blank">test site</a>
+                                        </p>
+                                    </div>
+                                    <div class="flex flex-col text-xs md:text-base">
+                                        <!-- Status -->
+                                        <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-emerald-400/10 text-emerald-400 h-fit">Active</span>
+                                        <!-- Date -->
+                                        <span class="whitespace-nowrap rounded-full px-5 py-1 font-semibold text-slate-500 h-fit">2021</span>    
+                                    </div>
+                                </div>
+                                <!-- Description -->
+                                <p class="text-sm md:text-xl text-slate-400 whitespace-pre-wrap">I made it when I was extremely bored during mco, and nowdays I upgrade it whenever I feel like wasting time ;D</p>
+                                <!-- Tags -->
+                                <div class="justify-start text-xs md:text-base">
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-lime-500/10 m-1 inline-block text-lime-500">Web Development</span>
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">JavaScript</span>
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">HTML</span>
+                                    <span class="whitespace-nowrap rounded-full px-3 py-1 font-semibold bg-sky-500/10 m-1 inline-block text-sky-400">Tailwind</span>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+    
                 </div>
-
             </div>
-        </div>
+    
         <!-- Right End -->
 
     </div>
