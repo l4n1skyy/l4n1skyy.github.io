@@ -10,62 +10,73 @@
     <link rel="icon" href="./assets/favicon.png">
 </head>
 
-<body class="bg-slate-900 flex flex-col" style="font-family: 'Cozette';">
-    <div class="flex flex-col md:flex-row h-max">
+<!-- Body -->
+<body class="md:h-screen min-h-screen w-full bg-slate-900 flex flex-col" style="font-family: 'Cozette';">
 
-        <!-- Left -->
-        <div class="self-start md:sticky top-0 h-auto w-full flex flex-col md:px-20 md:pt-20 pt-10">
-            <div class="mx-auto my-auto md:space-y-11">
-                <!-- Title -->
-                <div class="flex flex-row">
-                    <p class="bg-gradient-to-r from-purple-400 via-purple-300 to-purple-400 inline-block text-transparent bg-clip-text font-bold text-5xl md:text-7xl">l4n1skyy</p>
-                    <img class=" h-4 w-5 md:h-8 md:w-10 mt-10 ml-1" src="assets/image-1.png">
-                </div>     
-                <p class="text-gray-600 font-semibold text-lg md:text-2xl md:ml-6 mt-1 ml-4">This site has NOT been updated in awhile 💀</p>
+    <!-- Wrapper -->
+    <div class="min-h-full md:h-full w-[70%] mx-auto flex flex-col justify-start">
 
-                <!-- Image 2 -->
-                <img class="h-60 md:h-96 pt-4 md:pt-0" src="assets/image-2.jpg">
+        <!-- Top -->
+        <div class="md:h-1/3 h-fit mt-[10%] md:mt-0 w-full flex flex-col justify-center items-start">
+            <!-- Title -->
+            <div class="flex flex-row">
+                <p class="bg-gradient-to-r from-purple-400 via-purple-300 to-purple-400 inline-block text-transparent bg-clip-text font-bold text-5xl md:text-7xl">l4n1skyy</p>
+                <img class="h-4 w-5 md:h-8 md:w-10 mt-10 ml-1" src="assets/image-1.png">
             </div>
+            <p class="text-gray-600 font-semibold text-lg md:text-2xl md:mt-5 md:ml-3">imma swerve bend that corner wooah 🥀🥀🥀</p>
         </div>
-        <!-- Left End -->
 
-        <!-- Right -->
-        <div class="w-full md:pt-36 pt-10 flex flex-col">
-            <div class="w-fit flex flex-col mx-auto">
-                <!-- Title -->
-                <p class="px-3 text-2xl md:text-4xl text-white font-light">Index:</p>
+        <!-- Bottom -->
+        <div class="h-2/3 w-full flex md:flex-row flex-col mb-[10%] md:mb-0">
 
-                <!-- About Me -->
-                <div class="md:my-8 my-2 rounded-lg h-fit flex flex-col relative">
-                    <div class="flex justify-between">
-                        <a class="whitespace-nowrap rounded-full mx-1 px-3 py-1 bg-lime-400/10 md:text-2xl text-md font-light text-lime-200" href="./about me.html">About Me</a>
-                    </div>
-                    <p class="md:text-lg text-md px-3 md:pt-2 pt-1 text-gray-400 whitespace-pre-wrap">A little about me, my hobbies, etc</p>
+            <!-- Left -->
+            <div class="h-full w-full md:w-3/5 flex flex-col justify-start items-start mb-[15%] md:mb-0 mt-[15%] md:mt-0">
+                <div class="flex flex-col justify-start w-fit h-full md:ml-4">
+                    <!-- Image 2 -->
+                    <img class="object-contain h-3/5 w-fit" src="assets/image-2.jpg">
                 </div>
-                <!-- About Me End-->
-
-                <!-- Projects -->
-                <div class="md:my-8 my-2 rounded-lg h-fit flex flex-col relative">
-                    <div class="flex justify-between">
-                        <a class="whitespace-nowrap rounded-full mx-1 px-3 py-1 bg-lime-400/10 md:text-2xl text-md font-light text-lime-200" href="./projects.html">Projects</a>
-                    </div>
-                    <p class="md:text-lg text-md px-3 md:pt-2 pt-1 text-gray-400 whitespace-pre-wrap">My current, past and future projects</p>
-                </div>
-                <!-- Projects End -->
-
-                <!-- Contact -->
-                <div class="md:my-8 my-2 rounded-lg h-fit flex flex-col relative">
-                    <div class="flex justify-between">
-                        <a class="whitespace-nowrap rounded-full mx-1 px-3 py-1 bg-lime-400/10 md:text-2xl text-md font-light text-lime-200" href="./contact.html">Contact</a>
-                    </div>
-                    <p class="md:text-lg text-md px-3 md:pt-2 pt-1 text-gray-400 whitespace-pre-wrap">Links to my socials and other accounts</p>
-                </div>
-                <!-- Contact End -->
-
             </div>
+            <!-- Left End -->
+
+            <!-- Right -->
+            <div class="h-fit w-full md:w-2/5 flex flex-col justify-center items-center">
+                <div class="flex flex-col justify-center w-fit h-full md:mt-8">
+                    <!-- Title -->
+                    <p class="px-3 text-2xl md:text-4xl text-white font-light">Index:</p>
+
+                    <!-- About Me -->
+                    <div class="md:my-4 my-2 rounded-lg h-fit flex flex-col relative">
+                        <div class="flex justify-between">
+                            <a class="whitespace-nowrap rounded-full mx-1 px-3 py-1 bg-lime-400/10 md:text-2xl text-md font-light text-lime-200" href="./about me.html">About Me</a>
+                        </div>
+                        <p class="md:text-lg text-sm px-3 md:pt-2 pt-1 text-gray-400 whitespace-pre-wrap">A little about me, my hobbies, etc</p>
+                    </div>
+
+                    <!-- Projects -->
+                    <div class="md:my-4 my-2 rounded-lg h-fit flex flex-col relative">
+                        <div class="flex justify-between">
+                            <a class="whitespace-nowrap rounded-full mx-1 px-3 py-1 bg-lime-400/10 md:text-2xl text-md font-light text-lime-200" href="./projects.html">Projects</a>
+                        </div>
+                        <p class="md:text-lg text-sm px-3 md:pt-2 pt-1 text-gray-400 whitespace-pre-wrap">My current, past and future projects</p>
+                    </div>
+
+                    <!-- Contact -->
+                    <div class="md:my-4 my-2 rounded-lg h-fit flex flex-col relative">
+                        <div class="flex justify-between">
+                            <a class="whitespace-nowrap rounded-full mx-1 px-3 py-1 bg-lime-400/10 md:text-2xl text-md font-light text-lime-200" href="./contact.html">Contact</a>
+                        </div>
+                        <p class="md:text-lg text-sm px-3 md:pt-2 pt-1 text-gray-400 whitespace-pre-wrap">Links to my socials and other accounts</p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Right End -->
+
         </div>
-        <!-- Right End -->
+        <!-- Bottom End -->
 
     </div>
+
 </body>
+
 </html>
