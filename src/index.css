@@ -12,6 +12,11 @@
   body {
     @apply h-full;
     @apply select-none;
-    @apply font-mono antialiased;
+    @apply font-CozetteVector antialiased;
+  }
+
+  @font-face {
+    font-family: 'CozetteVector';
+    src: url('./assets/CozetteVector.ttf') format('truetype');
   }
 }
