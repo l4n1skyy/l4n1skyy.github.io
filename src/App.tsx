@@ -1,11 +1,15 @@
-import React from 'react';
-import { HomeView } from './components';
+import { HomeView, ContactView, ProjectView, AboutView } from './components';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <p className='text-red-500'>test</p>
-      <HomeView />
+      <Routes>
+         <Route path='/' element={<HomeView />} />
+         <Route path='/About' element={<AboutView />} />
+         <Route path='/Projects' element={<ProjectView />} />
+         <Route path='/Contact' element={<ContactView />} />
+      </Routes>
     </div>
   );
 }
