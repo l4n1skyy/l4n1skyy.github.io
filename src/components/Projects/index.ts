@@ -1,1 +1,1 @@
-export * from './ProjectView'
+export * from './ProjectsView'
