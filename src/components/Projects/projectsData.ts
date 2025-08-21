@@ -14,10 +14,10 @@ export const projects = [
     description: 'I joined a 48 hour hackathon, my team made a budgeting app with a cute pet called PengYou. We won two cash prizes, best pitch and 2nd place!',
     tags: ['Web Development', 'Tailwind', 'Svelte', 'Sveltekit'],
     image: [
-      '/assets/projects/pengyou-1.gif',
-      '/assets/projects/pengyou-2.jpg',
-      '/assets/projects/pengyou-3.jpg',
-      '/assets/projects/pengyou-4.jpg'
+      '/assets/pengyou-1.gif',
+      '/assets/pengyou-2.jpg',
+      '/assets/pengyou-3.jpg',
+      '/assets/pengyou-4.jpg'
     ]
   },
   // scholarfisch
@@ -33,8 +33,8 @@ export const projects = [
     description: "Scholarfisch was a project I made for my final year project of my diploma. It's a desktop app that's inspired by the Roblox game Fisch and the study mobile app Forest. It combines gamification with studying. It uses fully original, hand drawn art by Erin!",
     tags: ['Web Development', 'React', 'Tailwind'],
     image: [
-      '/assets/projects/scholarfisch.gif',
-      '/assets/projects/scholarfisch-2.png'
+      '/assets/scholarfisch-1.gif',
+      '/assets/scholarfisch-2.png'
     ]
   },
   // cs50x
@@ -50,7 +50,10 @@ export const projects = [
     ],
     description: "The best course I've ever taken- It teaches all the basics of programming and computer science, and provides some really tough programming challenges which make you enjoy programming.",
     tags: ['Computer Science', 'Software Engineering', 'Web Development', 'C', 'Python', 'SQL', 'HTML', 'CSS'],
-    image: '/assets/projects/cs50x.jpg'
+    image: [
+      '/assets/cs50x-1.jpg',
+      '/assets/cs50x-2.png'
+    ]
   },
   // quantum entanglement
   {
@@ -66,7 +69,11 @@ export const projects = [
     ],
     description: 'A game made by me and my team, Team MYCTL for PyWeek March 2022. We won second place :D',
     tags: ['Game Dev', 'Python'],
-    image: '/assets/projects/quantum-entanglement.png'
+    image: [
+      '/assets/quantum-entanglement-1.png',
+      '/assets/quantum-entanglement-2.png',
+      '/assets/quantum-entanglement-3.png'
+    ]
   },
   // toaddo
   {
@@ -81,7 +88,7 @@ export const projects = [
     ],
     description: 'A simple and pleasant task manager I made to practice CSS flexbox and grids as well as javascript.',
     tags: ['Web Development', 'Tailwind', 'HTML', 'JavaScript'],
-    image: '/assets/projects/toaddo.gif'
+    image: '/assets/toaddo.gif'
   },
   // gdsc
   {
@@ -95,7 +102,7 @@ export const projects = [
     ],
     description: 'I was interested to know more about the field of data analytics, so I enrolled in this course with a sponsorship from Girls in Tech KL (GIT).',
     tags: ['Data Analytics'],
-    image: '/assets/projects/gdsc.jpg'
+    image: '/assets/gdsc.jpg'
   },
   // polybar ping
   {
@@ -109,7 +116,7 @@ export const projects = [
     ],
     description: "Shows ping in polybar.. why? idk I'm used to seeing ping in games as a indicator of good/bad internet soo yea, prefer this to polybar's default KB.",
     tags: ['Software Engineering', 'Shell'],
-    image: '/assets/projects/polybar.jpg'
+    image: '/assets/polybar.jpg'
   },
   // clinder
   {
@@ -123,7 +130,7 @@ export const projects = [
     ],
     description: 'Command line interface for google calendar I made as CS50x final project.',
     tags: ['Software Engineering', 'Python'],
-    image: '/assets/projects/clinder.png'
+    image: '/assets/clinder.png'
   },
   // personal website
   {
@@ -137,7 +144,7 @@ export const projects = [
     ],
     description: "I made it when I was extremely bored during mco, and nowdays I upgrade it whenever I feel like wasting time ;D",
     tags: ['Web Development', 'JavaScript', 'HTML', 'Tailwind'],
-    image: '/assets/projects/personal-website.png'
+    image: '/assets/personal-website.png'
   },
   // sppc
   {
@@ -151,6 +158,6 @@ export const projects = [
     ],
     description: 'SPPC is a program to manage chess competitions (round robin). I made this program for a school project, the system language is Malay.',
     tags: ['Web Development', 'PHP', 'Bootstrap', 'HTML'],
-    image: '/assets/projects/sppc.png'
+    image: '/assets/sppc.png'
   }
 ]

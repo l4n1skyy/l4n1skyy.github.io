@@ -1,11 +1,39 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { ComponentProps } from 'react'
 import { Link } from 'react-router-dom'
 import { projects as projectsData } from './projectsData'
 import { ProjectCard } from './ProjectCard'
 
+function getAllImages(projects: typeof projectsData) {
+  return projects.flatMap(p =>
+    Array.isArray(p.image)
+      ? p.image
+      : p.image
+        ? [p.image]
+        : []
+  )
+}
+
 export const ProjectsView = ({ className, children, ...props }: ComponentProps<'div'>) => {
   const [sortMode, setSortMode] = useState<'default' | 'date'>('default')
+  const [imagesLoaded, setImagesLoaded] = useState(false)
+
+  useEffect(() => {
+    const images = getAllImages(projectsData)
+    if (images.length === 0) {
+      setImagesLoaded(true)
+      return
+    }
+    let loaded = 0
+    images.forEach(src => {
+      const img = new window.Image()
+      img.src = src
+      img.onload = img.onerror = () => {
+        loaded++
+        if (loaded === images.length) setImagesLoaded(true)
+      }
+    })
+  }, [])
 
   // Helper to parse date strings for sorting
   function parseDate(dateStr: string) {
@@ -62,9 +90,15 @@ export const ProjectsView = ({ className, children, ...props }: ComponentProps<'
         {/* Bottom */}
         <div className="h-full w-[90%] flex flex-col mx-auto space-y-8 mb-[10%]">
           {/* Project Card */}
-          {sortedProjects.map(project => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
+          {!imagesLoaded ? (
+            <div className="w-full flex justify-center items-center py-20">
+              <span className="text-gray-400 text-xl font-semibold">Loading projects...</span>
+            </div>
+          ) : (
+            sortedProjects.map(project => (
+              <ProjectCard key={project.id} project={project} />
+            ))
+          )}
         </div>
         {children}
       </div>

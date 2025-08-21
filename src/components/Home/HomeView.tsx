@@ -24,7 +24,7 @@ export const HomeView = ({ className, children, ...props }: ComponentProps<'div'
             />
           </div>
           <p className="text-gray-600 font-semibold text-lg md:text-2xl md:mt-5 md:ml-3">
-            imma swerve bend that corner wooah 🥀🥀🥀
+            just a lil site for all my lil things hehe
           </p>
         </div>
         {/* Bottom */}
@@ -52,7 +52,7 @@ export const HomeView = ({ className, children, ...props }: ComponentProps<'div'
                   </Link>
                 </div>
                 <p className="md:text-lg text-sm px-3 md:pt-2 pt-1 text-gray-400 whitespace-pre-wrap">
-                  A little about me, my hobbies, etc
+                  Some random stuff about me
                 </p>
               </div>
               {/* Projects */}
@@ -66,7 +66,7 @@ export const HomeView = ({ className, children, ...props }: ComponentProps<'div'
                   </Link>
                 </div>
                 <p className="md:text-lg text-sm px-3 md:pt-2 pt-1 text-gray-400 whitespace-pre-wrap">
-                  My current, past and future projects
+                  Projects and courses I've worked on
                 </p>
               </div>
               {/* Contact */}
